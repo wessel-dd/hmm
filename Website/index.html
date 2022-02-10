@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="/assets/js/jquery.plugin.js"></script>
     <title>Team Wyvern</title>
 </head>
 
@@ -14,10 +13,18 @@
     <nav>
         <div class="logo"></div>
         <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Robot</a></li>
-            <li><a href="#">Behind the scenes</a></li>
+            <li><a href="#about-us">Meet The Team</a></li>
+            <li><a href="#robot">About Wyvern</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     <header id="header">
@@ -30,7 +37,7 @@
     </header>
     <div class="about-us" id="about-us">
         <section>
-            <h2>Lorem ipsum</h2>
+            <h2>Meet The Team</h2>
             <p>Sed lectus mi, eleifend quis congue non, lacinia id quam. Cras porta pellentesque nulla, ac auctor
                 ligula
                 scelerisque non. In vel placerat lacus. Nam pretium vitae purus et laoreet. Aliquam erat volutpat.
@@ -49,33 +56,61 @@
                 Suspendisse porta, turpis at ullamcorper imperdiet, felis lacus eleifend sapien, pulvinar elementum
                 ipsum lacus ut elit. Sed ipsum erat, porttitor non malesuada at, interdum at nibh. Mauris ut ornare
                 purus.</p>
-            <h2>Nulla vitae lacus</h2>
-            <p>Praesent commodo elit vel massa gravida lacinia. Maecenas auctor dignissim porttitor. Donec tincidunt
-                mi
-                eget semper bibendum. Morbi quis sagittis sapien. Fusce ut ligula purus. Nulla tristique augue nec
-                lectus lacinia congue. Nunc tempus eros quam, ac sollicitudin mauris vehicula ac. Vivamus pulvinar
-                elit
-                ac risus placerat rutrum.</p>
-            <p>Magna indoctum erroribus no his, alii fabellas eum an. Et tota clita eleifend eum, pri ne euismod
-                eloquentiam, sea ei quas tibique. Ipsum tamquam cum id, tota clita congue ad usu. Ex eos admodum
-                nominati. Eam ei summo dictas nostrum, vim harum graeco apeirian te. Sensibus persequeris nam an, cu
-                legere oblique tincidunt eos, et soleat vivendum indoctum eos.</p>
-            <p>Donec lobortis porta ipsum a tristique. Integer sit amet ipsum porta, bibendum mauris vitae,
-                ultricies
-                lectus.</p>
-        </section>
-    </div>
-    <main>
 
-    </main>
+        </section>
+        <div class="parent">
+            <img src="https://www.silvano.nl/static/version1639556596/frontend/Solwin/freego_child/nl_NL/Interactivated_Bed/images/interactivated/placeholder.png"
+                alt="groepsfoto" class="groepsfoto">
+        </div>
+    </div>
+    <div class="robot" id="robot">
+        <section>
+            <h2>About Wyvern</h2>
+            <p>Sed lectus mi, eleifend quis congue non, lacinia id quam. Cras porta pellentesque nulla, ac auctor
+                ligula
+                scelerisque non. In vel placerat lacus. Nam pretium vitae purus et laoreet. Aliquam erat volutpat.
+                Pellentesque id volutpat sem, et condimentum nisl. Donec bibendum congue mauris, ac commodo tortor
+                volutpat ac. Donec lobortis lorem nisi, sit amet bibendum lacus vestibulum interdum. Donec mollis
+                ligula
+                at semper iaculis.</p>
+            <p>Duis et vestibulum turpis. Duis non ultrices quam. Sed volutpat imperdiet sollicitudin. Aliquam erat
+                volutpat. Donec at adipiscing purus. Duis varius metus vitae mattis pellentesque. Etiam tempor urna
+                sed
+                congue vulputate. Nulla neque metus, vulputate a dui ut, suscipit fringilla risus. Suspendisse
+                posuere
+                dignissim vestibulum. Praesent congue vestibulum dolor, quis lobortis libero egestas ac. Sed
+                venenatis
+                bibendum interdum. Curabitur rhoncus urna quis viverra varius. Cras posuere non tortor at volutpat.
+                Suspendisse porta, turpis at ullamcorper imperdiet, felis lacus eleifend sapien, pulvinar elementum
+                ipsum lacus ut elit. Sed ipsum erat, porttitor non malesuada at, interdum at nibh. Mauris ut ornare
+                purus.</p>
+        </section>
+        <div class="parent">
+            <img src="https://www.silvano.nl/static/version1639556596/frontend/Solwin/freego_child/nl_NL/Interactivated_Bed/images/interactivated/placeholder.png"
+                alt="robot-foto" class="robot-foto">
+        </div>
+    </div>
     <footer>
         <div class="footer-bg">
-            <a href="https://github.com/SilentDragonCode/projectweek-robot">
-                <img src="/assets/img/github-logo.png" alt="GitHub" class="github-logo">
-                <img src="/assets/img/insta-logo.png" alt="Instagram" class="insta-logo">
-            </a>
+            <div class="footer-images">
+
+
+                <a href="https://github.com/SilentDragonCode/projectweek-robot">
+                    <img src="/assets/img/github-logo.png" alt="GitHub" class="github-logo">
+                </a>
+
+
+                <a href="https://github.com/SilentDragonCode/projectweek-robot">
+                    <img src="/assets/img/insta-logo.png" alt="Instagram" class="insta-logo">
+                </a>
+
+
+            </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery.plugin.js"></script>
 </body>
 
 </html>
