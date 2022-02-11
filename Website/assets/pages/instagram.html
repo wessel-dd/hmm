@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Instagram API</title>
+    <style type="text/css">
+        a img {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="/assets/pages/instagram.html">Instagram</a>
+                        <a href="#">Merch</a>
+                        <a href="#">Page 3</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header id="header">
+        <div class="headline">
+            <div class="inner">
+                <h1>Instagram</h1>
+                <p>@teamwyvern_roc</p>
+            </div>
+        </div>
+    </header>
+    <div class="about-us" id="about-us">
+        <section>
+            <h1 style="text-align: center">Instagram Feed</h1>
+            <div id="instafeed-container"></div>
+            <a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>
+
+
+            <script
+                src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    target: "instafeed-container",
+                    resolution: 'high_resolution',
+                    accessToken: 'IGQVJXVTNGdTdHVHdGRW9iUm9xcGdwczZA2TlM1aUNoaDQ5aVl3X0VwSjRpVm4wR0I1Uzc1TEJZAQWM0ejN3VlVqM2d1TEV6clJiQXhrSlFfdTlGQXc1RFFoSUNfZAElmVE9oXzYwaU1wamdOYXc5dVBHNQZDZD'
+                });
+                userFeed.run();
+            </script>
+            <!--           <footer>
+                <div class="footer-bg">
+                    <div class="footer-images">
+
+
+                        <a href="https://github.com/SilentDragonCode/projectweek-robot">
+                            <img src="/assets/img/github-logo.png" alt="GitHub" class="github-logo">
+                        </a>
+
+
+                        <a href="https://github.com/SilentDragonCode/projectweek-robot">
+                            <img src="/assets/img/insta-logo.png" alt="Instagram" class="insta-logo">
+                        </a>
+
+
+                    </div>
+                </div>
+            </footer>
+-->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="/assets/js/jquery.plugin.js"></script>
+</body>
+
+</html>
