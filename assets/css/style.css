@@ -208,7 +208,7 @@ main {
 }
 .picture-holder {
   display: block;
-  width: 30%;
+  max-width: 30%;
   transition: transform 0.3s; /* Animation */
   margin: 0 auto;
 }
