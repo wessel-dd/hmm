@@ -6,7 +6,7 @@
 body {
   height: 100%;
   background: #111;
-
+  font-family: "Open Sans", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -71,13 +71,6 @@ html {
 
 /* Header */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  color: #333;
-}
 header {
   background: #111;
 }
@@ -156,6 +149,7 @@ nav a:hover {
   font-size: 7em;
   line-height: 0;
   color: red;
+  text-shadow: 1px 1px rgb(255, 177, 177);
   top: 25px;
 }
 .logo:before {
@@ -201,14 +195,12 @@ main {
 }
 
 .parent {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
 }
 .picture-holder {
-  display: block;
-  max-width: 30%;
+  width: 35%;
   transition: transform 0.3s; /* Animation */
   margin: 0 auto;
 }
@@ -216,14 +208,13 @@ main {
   transform: scale(1.2);
 }
 
-/* Instagram */
-a img {
-  margin: 25px;
-}
-
 /* Footer */
 
-.footer-bg {
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   height: 100px;
   width: 100%;
   background-color: rgb(34, 34, 34);
@@ -232,30 +223,12 @@ a img {
   text-align: center;
 }
 
-footer {
-  clear: both;
-  position: bottom;
-}
-
 .footer-images {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  gap: 10%;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 50%;
 }
-.github-logo {
-  position: relative;
-  top: 75%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  max-width: 70px;
-}
-.insta-logo {
-  position: relative;
-  top: 75%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  max-width: 70px;
+
+.socials {
+  max-width: 70px;  
 }
