@@ -170,7 +170,7 @@ nav a:hover {
 /* Text */
 section {
   width: 100%;
-  margin: 25px auto;
+  margin: 15px auto;
   padding: 20px;
   max-width: 800px;
   font-size: 1.2em;
@@ -187,6 +187,13 @@ section {
 }
 
 /* Groepsfoto */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding-top: 5%;
+}
+
 .parent {
   position: relative;
   top: 0;
@@ -205,6 +212,12 @@ section {
 }
 
 /* Robot foto */
+.robot {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
 .parent {
   position: relative;
   top: 0;
@@ -241,7 +254,10 @@ footer {
 }
 
 .footer-images {
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -250,12 +266,12 @@ footer {
   top: 75%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  max-width: 80px;
+  max-width: 70px;
 }
 .insta-logo {
   position: relative;
   top: 75%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  max-width: 80px;
+  max-width: 70px;
 }
