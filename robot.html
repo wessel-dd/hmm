@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Team Wyvern</title>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <title>The Robot</title>
 </head>
 
 <body>
@@ -19,17 +21,6 @@
             <li><a href="team.html">Meet The Team</a></li>
             <li><a href="robot.html">Our Robot</a></li>
             <li><a href="behind the scenes.html">Behind The Scenes</a></li>
-
-           <!-- <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
-                    <div class="dropdown-content">
-                        <a href="assets/pages/instagram.html">Instagram</a>
-                        <a href="#">Merch</a>
-                        <a href="#">Page 3</a>
-                    </div>
-                </div>
-            </li> -->
         </ul>
     </nav>
     <header id="header">
@@ -40,7 +31,7 @@
         </div>
     </header>
     <main>
-        <div class="about-wyvern" id="home">
+        <div class="robot-wyvern" id="home">
                 <h2>Our Robot</h2>
                 <p>We are 6 students from ROC Technovium of which 3 come from the Software Developer 
                     course and the other 3 from the Media and Design course. In this project we have been 
@@ -50,21 +41,96 @@
                     when there is a green dot on the ground, it must stop driving and make a noise to let 
                     people know it has stopped. fortunately, a lot of the documentation can be found online 
                     and there are many useful guides on YouTube.</p>
-            <div class="parent">
-                <img src="assets/img/Concept Team wyvern.png"
-                    alt="Team-logo" class="picture-holder">
+                    <div id="box-html" class="box-robot" data-type="html">
+                        <section>#!/usr/bin/env pybricks-micropython
+                            <br>from pybricks.hubs import EV3Brick
+                            <br>from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
+                            <br>InfraredSensor, UltrasonicSensor, GyroSensor)
+                            <br>from pybricks.parameters import Port, Stop, Direction, Button, Color
+                            <br>from pybricks.tools import wait, StopWatch, DataLog
+                            <br>from pybricks.robotics import DriveBase
+                            <br>from pybricks.media.ev3dev import SoundFile, ImageFile
+                            <br>
+                            <br>#classes
+                            <br>ev3 = EV3Brick()
+                            <br>left_wheel = Motor(Port.A, Direction.CLOCKWISE, [40, 8])
+                            <br>right_wheel = Motor(Port.D,  Direction.CLOCKWISE, [40, 8])
+                            <br>Sensor = ColorSensor(Port.S3)
+                            <br>robot = DriveBase(left_wheel, right_wheel, wheel_diameter=55.5, axle_track=104)
+                            <br>
+                            <br>while True:
+                            <br>if Sensor.color() == Color.WHITE:
+                            <br>drivespeed = 20
+                            <br>robot.straight(10)
+                            <br>
+                            <br>
+                            <br>
+                            <br>if Sensor.color() == Color.RED:
+                            <br>#Rood obstakel omver rijden
+                            <br>drivespeed = 100
+                            <br>robot.straight(50)
+                            <br>
+                            <br>
+                            <br>#Groene Knop gebruiken
+                            <br>if Sensor.color() == Color.GREEN:
+                            <br>ev3.speaker.beep()
+                            <br>robot.stop()
+                            <br>
+                            <br>
+                            <br>#Als de robot geen zwart, rood of groen ziet
+                            <br>if not Sensor.color() == Color.WHITE:
+                            <br>#ev3.speaker.beep()
+                            <br>drivespeed = 10
+                            <br>robot.turn(30)
+                        </section>
+                    </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="links-footer">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="robot.html">Robot</a></li>
+                    <li><a href="behind the scenes.html">Behind The Scenes</a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>&nbsp; 6525 EE Nijmegen, NL
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>&nbsp; Email here
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>&nbsp; +31 24 890 4500
+                    </li>
+                </ul>
             </div>
         </div>
-   </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-images">
-                <a href="https://github.com/SilentDragonCode/projectweek-robot">
-                    <img src="assets/img/github-logo.png" alt="GitHub" class="socials">
-                </a>
-                <a href="https://github.com/SilentDragonCode/projectweek-robot">
-                    <img src="assets/img/insta-logo.png" alt="Instagram" class="socials">
-                </a>
+        <div class="footer-below">
+            <div class="copyright">
+                <p>Copyright © 2022 All rights reserved by:
+                    <strong>Team Wyvern</strong>.
+                </p>
+            </div> 
+            <div class="socials">
+                <ul>
+                    <li>
+                        <a href="https://github.com/SilentDragonCode/projectweek-robot">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/teamwyvern_roc/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Team Wyvern</title>
+    <title>Behind The Scenes</title>
 </head>
 
 <body>
@@ -19,17 +19,6 @@
             <li><a href="team.html">Meet The Team</a></li>
             <li><a href="robot.html">Our Robot</a></li>
             <li><a href="behind the scenes.html">Behind The Scenes</a></li>
-
-           <!-- <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
-                    <div class="dropdown-content">
-                        <a href="assets/pages/instagram.html">Instagram</a>
-                        <a href="#">Merch</a>
-                        <a href="#">Page 3</a>
-                    </div>
-                </div>
-            </li> -->
         </ul>
     </nav>
     <header id="header">
@@ -40,8 +29,7 @@
         </div>
     </header>
     <main>
-        <div class="about-wyvern" id="home">
-            <section>
+        <div class="team-wyvern id="home">
                 <h2>Behind The Scenes</h2>
                 <p>We are 6 students from ROC Technovium of which 3 come from the Software Developer 
                     course and the other 3 from the Media and Design course. In this project we have been 
@@ -51,10 +39,9 @@
                     when there is a green dot on the ground, it must stop driving and make a noise to let 
                     people know it has stopped. fortunately, a lot of the documentation can be found online 
                     and there are many useful guides on YouTube.</p>
-            </section>
-        </div>
-    	<div id="instafeed-container"></div>
-
+                <h2>Live instagram feed</h2>
+            </div>
+    	    <div id="instafeed-container"></div>
 
 
 	    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
@@ -67,21 +54,58 @@
 	    });
 	    userFeed.run();
 	    </script>
-   </main>
+    </main>
     <footer>
-        <div class="footer-container">
-            <div class="footer-images">
-                <a href="https://github.com/SilentDragonCode/projectweek-robot">
-                    <img src="assets/img/github-logo.png" alt="GitHub" class="socials">
-                </a>
-                <a href="https://github.com/SilentDragonCode/projectweek-robot">
-                    <img src="assets/img/insta-logo.png" alt="Instagram" class="socials">
-                </a>
+        <div class="footer-top">
+            <div class="links-footer">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="robot.html">Robot</a></li>
+                    <li><a href="behind the scenes.html">Behind The Scenes</a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>&nbsp; 6525 EE Nijmegen, NL
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>&nbsp; Email here
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>&nbsp; +31 24 890 4500
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="copyright">
+                <p>Copyright © 2022 All rights reserved by:
+                    <strong>Team Wyvern</strong>.
+                </p>
+            </div> 
+            <div class="socials">
+                <ul>
+                    <li>
+                        <a href="https://github.com/SilentDragonCode/projectweek-robot">
+                            <i class="fa-brands fa-github"></i>                        
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/teamwyvern_roc/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.plugin.js"></script>
+    <script src="https://kit.fontawesome.com/460a8e1fd0.js" crossorigin="anonymous"></script>
 </body>
 </html>
