@@ -7,6 +7,7 @@ body {
   height: 100%;
   background: #111;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 html {
   scroll-behavior: smooth;
@@ -93,86 +94,18 @@ header {
   height: 100%;
   background: rgba(17, 17, 17, 0.5);
 }
+
 .inner {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size: 1.1em;
   opacity: 0;
   z-index: 10;
   transform: translateX(-50%) translateY(-50%);
   animation: fade-in 0.75s 0.25s ease-in forwards;
 }
-.inner h1 {
-  margin: 0;
-  font-size: 4em;
-  line-height: 1.2em;
-}
-.inner p {
-  margin: 0;
-  font-size: 1.4em;
-  font-style: italic;
-  font-family: serif;
-}
-nav {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-nav.scrolled {
-  background: rgba(17, 17, 17, 0.9);
-}
-nav ul {
-  float: right;
-  list-style: none;
-  padding: 25px;
-  margin: 0;
-}
-nav li {
-  float: left;
-}
-nav a {
-  font-size: 0.9em;
-  color: #fff;
-  text-decoration: none;
-  margin: 5px 0 0 20px;
-  display: block;
-}
-nav a:hover {
-  color: #ededed;
-}
-.logo {
-  height: 75px;
-  float: left;
-}
-.logo:before, .logo:after {
-  position: absolute;
-  font-size: 7em;
-  line-height: 0;
-  color: red;
-  text-shadow: 1px 1px rgb(255, 177, 177);
-  top: 25px;
-}
-.logo:before {
-  content: "\00BB";
-  left: 20px;
-}
-.logo:after {
-  content: "\00AB";
-  left: 34px;
-}
 
-/* Text */
-section {
-  width: 100%;
-  margin: 15px auto;
-  padding: 20px;
-  max-width: 800px;
-  font-size: 1.2em;
-  line-height: 1.6em;
-  box-sizing: border-box;
-  color: #FF0000;
-  text-shadow: 1px 1px rgb(255, 177, 177);
-}
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -182,16 +115,74 @@ section {
   }
 }
 
-h2 {
-  margin-bottom: 3%;
+.inner h1 {
+  margin: 0;
+  font-size: 4em;
+  line-height: 1.2em;
 }
 
-/*  */
+.inner p {
+  margin: 0;
+  font-size: 1.4em;
+  font-style: italic;
+  font-family: serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+  width: 100%;
+  gap: 3%;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: red;
+}
+
+.logo img{
+width: 12.5%;
+margin: 2%;
+border-radius: 1vh;
+padding: 2.5%;
+border: solid 2px red;
+box-shadow: 10px 10px 10px red;
+}
+
+/* Main Layout */
 main {
+  padding-top: 5%;
+}
+
+/* Home Page */
+.about-wyvern {
   display: flex;
   flex-direction: column;
-  gap: 3vw;
-  padding-top: 5%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+  width: 100%;
+  gap: 2rem;
+  font-size: 1.2em;
+  color: #FF0000;
+  text-shadow: 1px 1px rgb(255, 177, 177);
+}
+
+.about-wyvern p {
+  max-width: 50%;
 }
 
 .parent {
@@ -200,16 +191,57 @@ main {
   padding: 5%;
 }
 .picture-holder {
-  width: 35%;
+  width: 30%;
   transition: transform 0.3s; /* Animation */
-  margin: 0 auto;
 }
 .picture-holder:hover {
   transform: scale(1.2);
 }
 
-/* Footer */
+/* Team Page */
+.team-wyvern {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 8rem;
+  font-size: 1.2em;
+  color: #FF0000;
+  text-shadow: 1px 1px rgb(255, 177, 177);
+}
 
+.member-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8rem;
+  width: 60%;
+}
+
+.portret-holder img{
+  width: 100%;
+}
+
+
+/* Behind The Scenes Page */
+#instafeed-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5%;
+}
+
+.grid-col-span {
+  grid-column: span 2;
+}
+
+#instafeed-container a img{
+  inline-size: 100%;
+}
+
+/* Footer */
 .footer-container {
   display: flex;
   align-items: center;
@@ -218,9 +250,6 @@ main {
   height: 100px;
   width: 100%;
   background-color: rgb(34, 34, 34);
-  width: 100%;
-  color: white;
-  text-align: center;
 }
 
 .footer-images {
@@ -231,4 +260,5 @@ main {
 
 .socials {
   max-width: 70px;  
+  color: white;
 }

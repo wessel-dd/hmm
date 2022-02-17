@@ -11,7 +11,9 @@
 
 <body>
     <nav>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="assets/img/Logo voor website.png" alt="Team logo">
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="team.html">Meet The Team</a></li>
@@ -50,11 +52,21 @@
                     people know it has stopped. fortunately, a lot of the documentation can be found online 
                     and there are many useful guides on YouTube.</p>
             </section>
-            <div class="parent">
-                <img src="assets/img/Concept Team wyvern.png"
-                    alt="Team-logo" class="picture-holder">
-            </div>
         </div>
+    	<div id="instafeed-container"></div>
+
+
+
+	    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	    <script type="text/javascript">
+	    var userFeed = new Instafeed({
+		        get: 'user',
+		        target: "instafeed-container",
+    	    resolution: 'low_resolution',
+		        accessToken: 'IGQVJXWlAwQUphUGtpc1FEeGlvVndxZAWxuaE9FRWxpQ2ZAFZA0RTb3I3YkE3aGFDaGxpak1rb25YbjNZAZAk40d040Wl81LVQyMnNraEF0Tnlxb21mYkh0cFRQSkFuZA3ZAUYzREaGloVzFicGdwdDg4V2pFQwZDZD'
+	    });
+	    userFeed.run();
+	    </script>
    </main>
     <footer>
         <div class="footer-container">
