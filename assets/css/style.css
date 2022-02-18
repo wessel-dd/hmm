@@ -126,6 +126,10 @@ main {
   margin-bottom: 5%;
 }
 
+.about-wyvern p, .team-wyvern p, .robot-wyvern p {
+  max-width: 60%;
+}
+
 /* Home Page */
 .about-wyvern {
   display: flex;
